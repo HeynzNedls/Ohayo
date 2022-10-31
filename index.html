@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/log.svg" type="image/x-icon">
     <title>FrontEnders</title>
 
     <script src="https://kit.fontawesome.com/64d58efce2.js"
@@ -13,7 +14,7 @@
 
   <body>
 
-    <!--==Menu do trabalho==-->
+    <!--==Menu==-->
 
     <header>
       <div class="logo">
@@ -21,31 +22,12 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#port">Sobre</a></li>
-          <li><a href="#contact">Cursos</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a class="neon-btn" href="#home">Home</a></li>
+          <li><a class="neon-btn" href="#port">Sobre</a></li>
+          <li><a class="neon-btn" href="#contact">Cursos</a></li>
+          <li><a class="neon-btn"href="#contact">Contato</a></li>
+          <li><a class="neon-btn" href="">Login</a></li>
         </ul> 
-      </div>
-
-     <a class="button" href="">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Login
-   </a>
-   <a class="button2" href="">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    Cadastra
-   </a>
-        
-      
-      <div class="btn-mobile">
-        <ion-icon name="grid-outline"></ion-icon>
       </div>
     </header>
 
@@ -58,48 +40,42 @@
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
             <h2 class="title">Cursos de <br> <span class="title2">Front end</span></h2>
-            <p>Aprenta novas linguagem em até 3 meses</p>
+            <p>Aprenta novas linguagem em <strong> até 3 </strong>meses</p>
             <p class="social-text">Com professores expecializados</p>
             <br>
-            <input type="submit" value="Login" class="btn solid" />
+            <div class="containers">
+            <div class="btnl" ><a href="">Login</a></div>  <!--==Btn 1|1<==-->
+          </div>
 
 
             <div class="social-media">
               <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-html5"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-css3"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
+                <i class="fab fa-js"></i>
               </a>
               <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fas fa-plus"></i>
               </a>
             </div>
           </form>
           <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            
-            
-            
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+            <h2 class="title">Seja um <strong> Desenvolvedor</strong></h2> <br>
+            <p>Se <strong> ‘isso parece legal’ </strong>não é um motivo suficiente, aqui estão alguns </p>
+             <p> incentivos: <strong> Muita demanda e poucos profissionais qualificados</strong>,</p> 
+             <p> alta remuneração, flexibilidade no modelo de trabalho. </p>
+              <p><strong>E claro</strong> , porque todo <strong>negócio</strong> precisa de um <strong>site</strong>.</p>  
+            <div class="containers">
+              <div class="btnl" ><a href="">SingUp</a></div><!--==Btn 1|1<==-->
+              
             </div>
+            <p class="social-text">Você aprenderá a desenvolver um projeto web <strong>completo</strong>, </p> 
+            <p>desde a <strong> concepção</strong> e <strong> planejamento </strong>até a estruturação visual, integração</p>
+              <p>de banco de dados e interação com usuários, incluindo <strong>front-end e back-end</strong>.</p>
           </form>
         </div>
       </div>
@@ -107,14 +83,17 @@
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>Front Enders</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratio
-            </p>
-            <button class="btn transparent" id="sign-up-btn">
+            <h3>Front Enders</h3> <br>
+             <p>Torne-se um desenvolvedor pronto para o <strong>mercado</strong> e conquiste uma carreira <strong>promissora</strong>. </p>  <br>
+            <div class="containeris">
+            <button class="btn" id="sign-up-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>  <!--Btn >1|1-->
               Saiba mais
             </button>
+          </div>
           </div>
           <img src="img/curso.svg" class="image" alt="" />
         </div>
@@ -122,12 +101,14 @@
           <div class="content">
             <h3>One of us ?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
+              Profissional confiante e entre
+              para um mercado onde <strong> sobram
+              vagas</strong> e <strong> faltam profissionais</strong>.
             </p>
-            <button class="btn transparent" id="sign-in-btn">
+            <div class="containers">
+            <button class="btn" id="sign-in-btn">  <!--Btn 2|2<-->
               Sign in
-            </button>
+            </button></div>
           </div>
           <img src="img/informem.svg" class="image" alt="" />
         </div>
