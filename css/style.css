@@ -476,7 +476,7 @@ form.rigth-form {
     transition: 1s 0.8s ease-in-out;
   }
 
-  .signin-signup,
+  .rigth-left,
   .container.sign-up-mode .rigth-left {
     left: 50%;
   }
