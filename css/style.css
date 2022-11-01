@@ -20,17 +20,10 @@ header {
   z-index: 99;
 }
 
-header .logo {
-  width: 10%;
-}
-
-header .logo img {
-  width: 120px;
-}
 
 header .menu ul {
   display: flex;
-  margin-left: 500px;
+  margin-left: 850px;
 }
 
 header .menu ul li {
@@ -115,7 +108,7 @@ header .menu ul li a {
 .container {
   position: relative;
   width: 100%;
-   background: linear-gradient(10deg, #000000 21%, #0052ff 3% , #ffffff 100%);  /* cor de fundo */
+   background: linear-gradient(10deg, #000000 21%, #0052ff 30% , #ffffff 100%);  /* cor de fundo */
   min-height: 100vh;
   overflow: hidden;
 }
@@ -128,7 +121,7 @@ header .menu ul li a {
   left: 0;
 }
 
-.signin-signup {
+.rigth-left {
   position: absolute;
   top: 43%;
   transform: translate(-50%, -50%);
@@ -152,12 +145,12 @@ form {
   grid-row: 1 / 2;
 }
 
-form.sign-up-form {
+form.left-form {
   opacity: 0;
   z-index: 1;
 }
 
-form.sign-in-form {
+form.rigth-form {
   z-index: 2;
 }
 
@@ -173,7 +166,7 @@ form.sign-in-form {
 .input-field {
   max-width: 380px;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   margin: 10px 0;
   height: 55px;
   border-radius: 55px;
@@ -185,12 +178,12 @@ form.sign-in-form {
 
 /*-==Icons==-*/
 
-.social-media {
+.curs-icon {
   display: flex;
   justify-content: center;
 }
 
-.social-icon {
+.cursos-icon {
   height: 46px;
   width: 46px;
   display: flex;
@@ -205,9 +198,9 @@ form.sign-in-form {
   transition: 0.3s;
 }
 
-.social-icon:hover {
-  color: #4481eb;
-  border-color: #4481eb;
+.cursos-icon:hover {
+  color: #ffffff;
+  border-color: #ffffff;
 }
 /*-==FIcons==-*/
 
@@ -357,9 +350,6 @@ form.sign-in-form {
 /*-==FBtns2==-*/
 
 
-
-
-
 .panels-container {
   position: absolute;
   height: 100%;
@@ -378,14 +368,14 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-   background-image: linear-gradient(-5deg, #0052ff 3%, #ffffff 100%);   /*mudar cor */
+   background-image: linear-gradient(-1deg, #000000 10%, #0052ff 25% , #ffffff 100%);   /*mudar cor */
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
 }
 
 .image {
-  width: 100%;
+  width: 110%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
 }
@@ -435,40 +425,40 @@ form.sign-in-form {
 
 /*==Animação==*/
 
-.container.sign-up-mode:before {
+.container.btn-move:before {
   transform: translate(100%, -50%);
   right: 52%;
 }
 
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
+.container.btn-move .left-panel .image,
+.container.btn-move .left-panel .content {
   transform: translateX(-800px);
 }
 
-.container.sign-up-mode .signin-signup {
+.container.btn-move .rigth-left {
   left: 25%;
 }
 
-.container.sign-up-mode form.sign-up-form {
+.container.btn-move form.left-form {
   opacity: 1;
   z-index: 2;
 }
 
-.container.sign-up-mode form.sign-in-form {
+.container.btn-move form.rigth-form {
   opacity: 0;
   z-index: 1;
 }
 
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
+.container.btn-move .right-panel .image,
+.container.btn-move .right-panel .content {
   transform: translateX(0%);
 }
 
-.container.sign-up-mode .left-panel {
+.container.btn-move .left-panel {
   pointer-events: none;
 }
 
-.container.sign-up-mode .right-panel {
+.container.btn-move .right-panel {
   pointer-events: all;
 }
 
@@ -479,7 +469,7 @@ form.sign-in-form {
     min-height: 800px;
     height: 100vh;
   }
-  .signin-signup {
+  .rigth-left {
     width: 100%;
     top: 95%;
     transform: translate(-50%, -100%);
@@ -487,7 +477,7 @@ form.sign-in-form {
   }
 
   .signin-signup,
-  .container.sign-up-mode .signin-signup {
+  .container.sign-up-mode .rigth-left {
     left: 50%;
   }
 
@@ -533,7 +523,7 @@ form.sign-in-form {
     padding: 0.5rem 0;
   }
 
-  .btn.transparent {
+  .btn {
     width: 110px;
     height: 35px;
     font-size: 0.7rem;
@@ -571,7 +561,7 @@ form.sign-in-form {
     transform: translateY(300px);
   }
 
-  .container.sign-up-mode .signin-signup {
+  .container.sign-up-mode .rigth-left {
     top: 5%;
     transform: translate(-50%, 0);
   }
